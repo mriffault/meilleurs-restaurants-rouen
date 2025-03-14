@@ -18,9 +18,23 @@
         <p>Rouen, capitale de la Normandie, est reconnue pour son riche patrimoine gastronomique. Voici notre sélection des meilleures adresses où savourer une cuisine d'exception sans dépasser 60€ par personne.</p>
     </section>
 
+    <!-- Nouvelle section de recherche -->
+    <section class="search-section">
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search-input" placeholder="Rechercher un restaurant, une cuisine, un lieu...">
+            <button id="clear-search" class="clear-button" title="Effacer la recherche">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="search-results" class="search-results">
+            <p id="no-results-message" class="no-results hidden">Aucun restaurant ne correspond à votre recherche</p>
+        </div>
+    </section>
+
     <section class="restaurants">
         <!-- L'ODAS -->
-        <div class="restaurant-card">
+        <div class="restaurant-card" data-search-terms="ODAS étoilé michelin créative française vue cathédrale">
             <h3>L'ODAS ⭐</h3>
             <div class="rating">Note: 4.6/5</div>
             <p>Restaurant étoilé Michelin proposant une cuisine française créative à l'aveugle, avec une vue sur la cathédrale au 6ème étage.</p>
@@ -40,7 +54,7 @@
         </div>
 
         <!-- GILL -->
-        <div class="restaurant-card">
+        <div class="restaurant-card" data-search-terms="GILL institution quais étoilé française raffinée produits normands pigeon rouennaise">
             <h3>GILL</h3>
             <div class="rating">Note: 4.7/5</div>
             <p>Institution rouennaise sur les quais, anciennement étoilé Michelin, proposant une cuisine française raffinée mettant en valeur les produits normands.</p>
@@ -60,7 +74,7 @@
         </div>
 
         <!-- LA COURONNE -->
-        <div class="restaurant-card">
+        <div class="restaurant-card" data-search-terms="COURONNE historique 1345 vieux restaurant france traditionnelle normande">
             <h3>LA COURONNE</h3>
             <div class="rating">Note: 4.1/5</div>
             <p>Plus vieux restaurant de France fondé en 1345, La Couronne vous propose une cuisine normande traditionnelle dans un cadre historique exceptionnel.</p>
@@ -80,7 +94,7 @@
         </div>
 
         <!-- AU FLAMÉRON -->
-        <div class="restaurant-card">
+        <div class="restaurant-card" data-search-terms="FLAMERON fusion franco japonaise inventive originale korokke poulet">
             <h3>AU FLAMÉRON</h3>
             <div class="rating">Note: 4.8/5</div>
             <p>Une adresse originale proposant une fusion inventive entre cuisine française et influences japonaises, dans un cadre intimiste.</p>
@@ -100,7 +114,7 @@
         </div>
 
         <!-- LE XXI -->
-        <div class="restaurant-card">
+        <div class="restaurant-card" data-search-terms="XXI meilleure note moderne élégant tableau noir">
             <h3>LE XXI</h3>
             <div class="rating">Note: 4.9/5</div>
             <p>Restaurant à la meilleure note de Rouen proposant une cuisine française moderne dans un cadre élégant et une ambiance stylée.</p>
@@ -135,5 +149,7 @@
         <p>© 2025 Gastronomie Rouennaise - Créé avec passion pour les gourmets</p>
         <p>Les informations sont basées sur des recherches réalisées en mars 2025. Les prix et menus peuvent varier.</p>
     </footer>
+
+    <script src="search.js"></script>
 </body>
 </html>
