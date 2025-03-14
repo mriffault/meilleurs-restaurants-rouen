@@ -50,6 +50,79 @@ header p {
     font-size: 1.8rem;
 }
 
+/* Section de recherche */
+.search-section {
+    margin-bottom: 40px;
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8B2635;
+}
+
+#search-input {
+    width: 100%;
+    padding: 15px 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #8B2635;
+    box-shadow: 0 0 10px rgba(139, 38, 53, 0.2);
+}
+
+.clear-button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.clear-button:hover {
+    opacity: 1;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #8B2635;
+    font-weight: bold;
+    background-color: rgba(139, 38, 53, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animation pour les résultats filtrés */
+.restaurant-card.filtered-out {
+    opacity: 0.4;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
 /* Cartes de restaurants */
 .restaurants {
     display: grid;
@@ -63,7 +136,7 @@ header p {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
 .restaurant-card:hover {
@@ -163,5 +236,10 @@ footer {
     
     header h1 {
         font-size: 2rem;
+    }
+    
+    #search-input {
+        padding: 12px 40px;
+        font-size: 0.9rem;
     }
 }
