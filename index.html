@@ -3,199 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Les meilleurs restaurants gastronomiques de Rouen avec un budget de 60€ par personne">
-    <title>Gastronomie Rouennaise - Budget 60€</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Meilleurs Restaurants de Rouen - Budget 60€</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>Gastronomie Rouennaise</h1>
-            <p class="subtitle">Les meilleures tables de Rouen à moins de 60€ par personne</p>
-        </div>
+        <h1>Gastronomie Rouennaise</h1>
+        <p>Les meilleures tables de Rouen à moins de 60€ par personne</p>
     </header>
 
-    <main>
-        <section class="intro">
-            <div class="container">
-                <h2>Découvrez les perles culinaires de Rouen</h2>
-                <p>Rouen, capitale de la Normandie, est reconnue pour son riche patrimoine gastronomique. Nous avons sélectionné pour vous les meilleures adresses où vous pourrez savourer une cuisine d'exception sans dépasser un budget de 60€ par personne.</p>
+    <section class="intro">
+        <h2>Découvrez les perles culinaires de Rouen</h2>
+        <p>Rouen, capitale de la Normandie, est reconnue pour son riche patrimoine gastronomique. Voici notre sélection des meilleures adresses où savourer une cuisine d'exception sans dépasser 60€ par personne.</p>
+    </section>
+
+    <section class="restaurants">
+        <!-- L'ODAS -->
+        <div class="restaurant-card">
+            <h3>L'ODAS ⭐</h3>
+            <div class="rating">Note: 4.6/5</div>
+            <p>Restaurant étoilé Michelin proposant une cuisine française créative à l'aveugle, avec une vue sur la cathédrale au 6ème étage.</p>
+            <ul>
+                <li><i class="fas fa-euro-sign"></i> Déjeuner ~35€ (dans votre budget)</li>
+                <li><i class="fas fa-map-marker-alt"></i> 4 Passage Maurice Lenfant, 76000 Rouen</li>
+                <li><i class="fas fa-phone"></i> 02 35 73 83 24</li>
+                <li><i class="fas fa-globe"></i> <a href="https://lodas.fr/">lodas.fr</a></li>
+            </ul>
+            <div class="avis">
+                <h4>Avis clients</h4>
+                <p>"Excellent restaurant avec un service particulièrement à la hauteur, très professionnel"</p>
             </div>
-        </section>
-
-        <section class="restaurants-grid">
-            <div class="container">
-                <!-- Restaurant 1 -->
-                <div class="restaurant-card">
-                    <div class="restaurant-image" style="background-image: url('img/lodas.jpg')">
-                        <span class="michelin"><i class="fas fa-star"></i> Michelin</span>
-                    </div>
-                    <div class="restaurant-info">
-                        <h3>L'ODAS</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="note">4.6/5</span>
-                        </div>
-                        <p class="description">Restaurant étoilé Michelin proposant une cuisine française créative à l'aveugle, avec une vue sur la cathédrale au 6ème étage.</p>
-                        <ul class="features">
-                            <li><i class="fas fa-euro-sign"></i> <span class="budget">Déjeuner ~35€ (dans votre budget)</span></li>
-                            <li><i class="fas fa-map-marker-alt"></i> 4 Passage Maurice Lenfant, 76000 Rouen</li>
-                            <li><i class="fas fa-phone"></i> 02 35 73 83 24</li>
-                            <li><i class="fas fa-globe"></i> <a href="https://lodas.fr/" target="_blank">lodas.fr</a></li>
-                        </ul>
-                        <div class="avis">
-                            <h4>Avis clients</h4>
-                            <p>"Excellent restaurant avec un service particulièrement à la hauteur, très professionnel"</p>
-                        </div>
-                        <div class="tip">
-                            <p><i class="fas fa-lightbulb"></i> <strong>Astuce :</strong> Privilégiez le déjeuner pour profiter d'une cuisine étoilée à prix accessible.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Restaurant 2 -->
-                <div class="restaurant-card">
-                    <div class="restaurant-image" style="background-image: url('img/gill.jpg')">
-                        <span class="ex-michelin">Anciennement étoilé</span>
-                    </div>
-                    <div class="restaurant-info">
-                        <h3>GILL</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="note">4.7/5</span>
-                        </div>
-                        <p class="description">Institution rouennaise sur les quais, ce restaurant gastronomique propose une cuisine française raffinée mettant en valeur les produits normands.</p>
-                        <ul class="features">
-                            <li><i class="fas fa-euro-sign"></i> <span class="budget">Déjeuner dans votre budget</span></li>
-                            <li><i class="fas fa-map-marker-alt"></i> 8-9 Quai de la Bourse, 76000 Rouen</li>
-                            <li><i class="fas fa-phone"></i> 02 35 71 16 14</li>
-                            <li><i class="fas fa-globe"></i> <a href="https://www.gill.fr/" target="_blank">gill.fr</a></li>
-                        </ul>
-                        <div class="avis">
-                            <h4>Avis clients</h4>
-                            <p>"One of the best experience we've EVER had", "Simply unbeatable"</p>
-                        </div>
-                        <div class="tip">
-                            <p><i class="fas fa-lightbulb"></i> <strong>Recommandation :</strong> Ne manquez pas leur pigeon à la Rouennaise, spécialité locale.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Restaurant 3 -->
-                <div class="restaurant-card">
-                    <div class="restaurant-image" style="background-image: url('img/lacouronne.jpg')">
-                        <span class="historic">Depuis 1345</span>
-                    </div>
-                    <div class="restaurant-info">
-                        <h3>LA COURONNE</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★☆</span>
-                            <span class="note">4.1/5</span>
-                        </div>
-                        <p class="description">Plus vieux restaurant de France fondé en 1345, La Couronne vous propose une cuisine normande traditionnelle dans un cadre historique exceptionnel.</p>
-                        <ul class="features">
-                            <li><i class="fas fa-euro-sign"></i> <span class="budget">Formule déjeuner à 29€</span></li>
-                            <li><i class="fas fa-map-marker-alt"></i> 31 Place du Vieux Marché, 76000 Rouen</li>
-                            <li><i class="fas fa-phone"></i> 02 35 71 40 90</li>
-                            <li><i class="fas fa-globe"></i> <a href="https://www.lacouronne-rouen.fr/" target="_blank">lacouronne-rouen.fr</a></li>
-                        </ul>
-                        <div class="avis">
-                            <h4>Avis clients</h4>
-                            <p>"Fine French dining in a 900 year old timbered building. It doesn't get much better."</p>
-                        </div>
-                        <div class="tip">
-                            <p><i class="fas fa-lightbulb"></i> <strong>Expérience :</strong> Une immersion dans l'histoire culinaire française.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Restaurant 4 -->
-                <div class="restaurant-card">
-                    <div class="restaurant-image" style="background-image: url('img/flameron.jpg')">
-                        <span class="fusion">Fusion Franco-Japonaise</span>
-                    </div>
-                    <div class="restaurant-info">
-                        <h3>AU FLAMÉRON</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="note">4.8/5</span>
-                        </div>
-                        <p class="description">Une adresse originale proposant une fusion inventive entre cuisine française et influences japonaises, dans un cadre intimiste.</p>
-                        <ul class="features">
-                            <li><i class="fas fa-euro-sign"></i> <span class="budget">Dans votre budget</span></li>
-                            <li><i class="fas fa-map-marker-alt"></i> 236 Rue Martainville, 76000 Rouen</li>
-                            <li><i class="fas fa-phone"></i> 09 87 36 44 24</li>
-                            <li><i class="fas fa-globe"></i> <a href="http://www.auflameron.com/" target="_blank">auflameron.com</a></li>
-                        </ul>
-                        <div class="avis">
-                            <h4>Avis clients</h4>
-                            <p>"A total gem! French cuisine with some Japanese touches", "A delight for food lovers"</p>
-                        </div>
-                        <div class="tip">
-                            <p><i class="fas fa-lightbulb"></i> <strong>À essayer :</strong> Le Korokke de poulet, hautement recommandé.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Restaurant 5 -->
-                <div class="restaurant-card">
-                    <div class="restaurant-image" style="background-image: url('img/lexxi.jpg')">
-                        <span class="top-rated">Meilleure Note</span>
-                    </div>
-                    <div class="restaurant-info">
-                        <h3>LE XXI</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="note">4.9/5</span>
-                        </div>
-                        <p class="description">Restaurant à la meilleure note de Rouen proposant une cuisine française moderne dans un cadre élégant et une ambiance stylée.</p>
-                        <ul class="features">
-                            <li><i class="fas fa-euro-sign"></i> <span class="budget">Dans votre budget pour le déjeuner</span></li>
-                            <li><i class="fas fa-map-marker-alt"></i> 43 Rue aux Ours, 76000 Rouen</li>
-                            <li><i class="fas fa-phone"></i> 02 76 52 52 57</li>
-                            <li><i class="fas fa-globe"></i> <a href="https://www.restaurantle21.fr/" target="_blank">restaurantle21.fr</a></li>
-                        </ul>
-                        <div class="avis">
-                            <h4>Avis clients</h4>
-                            <p>"Great restaurant and great service", "We had a great diner, very good food in this restaurant with a stylish atmosphere"</p>
-                        </div>
-                        <div class="tip">
-                            <p><i class="fas fa-lightbulb"></i> <strong>Bon à savoir :</strong> Le menu est présenté sur un tableau noir.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="tip">
+                <p><strong>Astuce :</strong> Privilégiez le déjeuner pour profiter d'une cuisine étoilée à prix accessible.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="recommendation">
-            <div class="container">
-                <h2>Notre recommandation</h2>
-                <div class="recommendation-content">
-                    <div class="recommendation-text">
-                        <p>Pour profiter d'une expérience gastronomique exceptionnelle à Rouen avec un budget de 60€ par personne, nous vous recommandons :</p>
-                        <ul>
-                            <li><strong>Pour découvrir une cuisine étoilée :</strong> L'ODAS au déjeuner, une occasion rare de goûter à un restaurant étoilé Michelin sans se ruiner.</li>
-                            <li><strong>Pour une expérience historique :</strong> La Couronne, le plus vieux restaurant de France, proposant une formule déjeuner à 29€.</li>
-                            <li><strong>Pour les amateurs d'originalité :</strong> Au Flaméron et sa fusion franco-japonaise qui a conquis de nombreux clients.</li>
-                            <li><strong>Pour la qualité unanimement reconnue :</strong> Le XXI ou Gill, qui affichent les meilleures notes de la ville.</li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- GILL -->
+        <div class="restaurant-card">
+            <h3>GILL</h3>
+            <div class="rating">Note: 4.7/5</div>
+            <p>Institution rouennaise sur les quais, anciennement étoilé Michelin, proposant une cuisine française raffinée mettant en valeur les produits normands.</p>
+            <ul>
+                <li><i class="fas fa-euro-sign"></i> Déjeuner dans votre budget</li>
+                <li><i class="fas fa-map-marker-alt"></i> 8-9 Quai de la Bourse, 76000 Rouen</li>
+                <li><i class="fas fa-phone"></i> 02 35 71 16 14</li>
+                <li><i class="fas fa-globe"></i> <a href="https://www.gill.fr/">gill.fr</a></li>
+            </ul>
+            <div class="avis">
+                <h4>Avis clients</h4>
+                <p>"One of the best experience we've EVER had", "Simply unbeatable"</p>
             </div>
-        </section>
-    </main>
+            <div class="tip">
+                <p><strong>Recommandation :</strong> Ne manquez pas leur pigeon à la Rouennaise, spécialité locale.</p>
+            </div>
+        </div>
+
+        <!-- LA COURONNE -->
+        <div class="restaurant-card">
+            <h3>LA COURONNE</h3>
+            <div class="rating">Note: 4.1/5</div>
+            <p>Plus vieux restaurant de France fondé en 1345, La Couronne vous propose une cuisine normande traditionnelle dans un cadre historique exceptionnel.</p>
+            <ul>
+                <li><i class="fas fa-euro-sign"></i> Formule déjeuner à 29€</li>
+                <li><i class="fas fa-map-marker-alt"></i> 31 Place du Vieux Marché, 76000 Rouen</li>
+                <li><i class="fas fa-phone"></i> 02 35 71 40 90</li>
+                <li><i class="fas fa-globe"></i> <a href="https://www.lacouronne-rouen.fr/">lacouronne-rouen.fr</a></li>
+            </ul>
+            <div class="avis">
+                <h4>Avis clients</h4>
+                <p>"Fine French dining in a 900 year old timbered building. It doesn't get much better."</p>
+            </div>
+            <div class="tip">
+                <p><strong>Expérience :</strong> Une immersion dans l'histoire culinaire française.</p>
+            </div>
+        </div>
+
+        <!-- AU FLAMÉRON -->
+        <div class="restaurant-card">
+            <h3>AU FLAMÉRON</h3>
+            <div class="rating">Note: 4.8/5</div>
+            <p>Une adresse originale proposant une fusion inventive entre cuisine française et influences japonaises, dans un cadre intimiste.</p>
+            <ul>
+                <li><i class="fas fa-euro-sign"></i> Dans votre budget</li>
+                <li><i class="fas fa-map-marker-alt"></i> 236 Rue Martainville, 76000 Rouen</li>
+                <li><i class="fas fa-phone"></i> 09 87 36 44 24</li>
+                <li><i class="fas fa-globe"></i> <a href="http://www.auflameron.com/">auflameron.com</a></li>
+            </ul>
+            <div class="avis">
+                <h4>Avis clients</h4>
+                <p>"A total gem! French cuisine with some Japanese touches", "A delight for food lovers"</p>
+            </div>
+            <div class="tip">
+                <p><strong>À essayer :</strong> Le Korokke de poulet, hautement recommandé.</p>
+            </div>
+        </div>
+
+        <!-- LE XXI -->
+        <div class="restaurant-card">
+            <h3>LE XXI</h3>
+            <div class="rating">Note: 4.9/5</div>
+            <p>Restaurant à la meilleure note de Rouen proposant une cuisine française moderne dans un cadre élégant et une ambiance stylée.</p>
+            <ul>
+                <li><i class="fas fa-euro-sign"></i> Dans votre budget pour le déjeuner</li>
+                <li><i class="fas fa-map-marker-alt"></i> 43 Rue aux Ours, 76000 Rouen</li>
+                <li><i class="fas fa-phone"></i> 02 76 52 52 57</li>
+                <li><i class="fas fa-globe"></i> <a href="https://www.restaurantle21.fr/">restaurantle21.fr</a></li>
+            </ul>
+            <div class="avis">
+                <h4>Avis clients</h4>
+                <p>"Great restaurant and great service", "We had a great diner, very good food in this restaurant with a stylish atmosphere"</p>
+            </div>
+            <div class="tip">
+                <p><strong>Bon à savoir :</strong> Le menu est présenté sur un tableau noir.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendation">
+        <h2>Notre recommandation</h2>
+        <p>Pour profiter d'une expérience gastronomique exceptionnelle à Rouen avec un budget de 60€ par personne, nous vous recommandons :</p>
+        <ul>
+            <li><strong>Pour découvrir une cuisine étoilée :</strong> L'ODAS au déjeuner, une occasion rare de goûter à un restaurant étoilé Michelin sans se ruiner.</li>
+            <li><strong>Pour une expérience historique :</strong> La Couronne, le plus vieux restaurant de France, proposant une formule déjeuner à 29€.</li>
+            <li><strong>Pour les amateurs d'originalité :</strong> Au Flaméron et sa fusion franco-japonaise qui a conquis de nombreux clients.</li>
+            <li><strong>Pour la qualité unanimement reconnue :</strong> Le XXI ou Gill, qui affichent les meilleures notes de la ville.</li>
+        </ul>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Gastronomie Rouennaise - Créé avec passion pour les gourmets</p>
-            <p>Les informations sont basées sur des recherches réalisées en mars 2025. Les prix et menus peuvent varier.</p>
-        </div>
+        <p>© 2025 Gastronomie Rouennaise - Créé avec passion pour les gourmets</p>
+        <p>Les informations sont basées sur des recherches réalisées en mars 2025. Les prix et menus peuvent varier.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
