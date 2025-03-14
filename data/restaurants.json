@@ -1,0 +1,122 @@
+{
+  "restaurants": [
+    {
+      "id": "odas",
+      "name": "L'ODAS",
+      "rating": 4.6,
+      "michelin": true,
+      "description": "Restaurant étoilé Michelin proposant une cuisine française créative à l'aveugle, avec une vue sur la cathédrale au 6ème étage.",
+      "price": "Déjeuner ~35€ (dans votre budget)",
+      "address": "4 Passage Maurice Lenfant, 76000 Rouen",
+      "phone": "02 35 73 83 24",
+      "website": "https://lodas.fr/",
+      "websiteLabel": "lodas.fr",
+      "reviews": [
+        "Excellent restaurant avec un service particulièrement à la hauteur, très professionnel"
+      ],
+      "tip": "Privilégiez le déjeuner pour profiter d'une cuisine étoilée à prix accessible.",
+      "searchTerms": "ODAS étoilé michelin créative française vue cathédrale"
+    },
+    {
+      "id": "gill",
+      "name": "GILL",
+      "rating": 4.7,
+      "michelin": false,
+      "formerlyMichelin": true,
+      "description": "Institution rouennaise sur les quais, anciennement étoilé Michelin, proposant une cuisine française raffinée mettant en valeur les produits normands.",
+      "price": "Déjeuner dans votre budget",
+      "address": "8-9 Quai de la Bourse, 76000 Rouen",
+      "phone": "02 35 71 16 14",
+      "website": "https://www.gill.fr/",
+      "websiteLabel": "gill.fr",
+      "reviews": [
+        "One of the best experience we've EVER had", 
+        "Simply unbeatable"
+      ],
+      "tip": "Ne manquez pas leur pigeon à la Rouennaise, spécialité locale.",
+      "searchTerms": "GILL institution quais étoilé française raffinée produits normands pigeon rouennaise"
+    },
+    {
+      "id": "couronne",
+      "name": "LA COURONNE",
+      "rating": 4.1,
+      "description": "Plus vieux restaurant de France fondé en 1345, La Couronne vous propose une cuisine normande traditionnelle dans un cadre historique exceptionnel.",
+      "price": "Formule déjeuner à 29€",
+      "address": "31 Place du Vieux Marché, 76000 Rouen",
+      "phone": "02 35 71 40 90",
+      "website": "https://www.lacouronne-rouen.fr/",
+      "websiteLabel": "lacouronne-rouen.fr",
+      "reviews": [
+        "Fine French dining in a 900 year old timbered building. It doesn't get much better."
+      ],
+      "tip": "Une immersion dans l'histoire culinaire française.",
+      "searchTerms": "COURONNE historique 1345 vieux restaurant france traditionnelle normande",
+      "historical": true,
+      "foundedYear": 1345
+    },
+    {
+      "id": "flameron",
+      "name": "AU FLAMÉRON",
+      "rating": 4.8,
+      "description": "Une adresse originale proposant une fusion inventive entre cuisine française et influences japonaises, dans un cadre intimiste.",
+      "price": "Dans votre budget",
+      "address": "236 Rue Martainville, 76000 Rouen",
+      "phone": "09 87 36 44 24",
+      "website": "http://www.auflameron.com/",
+      "websiteLabel": "auflameron.com",
+      "reviews": [
+        "A total gem! French cuisine with some Japanese touches", 
+        "A delight for food lovers"
+      ],
+      "tip": "Le Korokke de poulet, hautement recommandé.",
+      "searchTerms": "FLAMERON fusion franco japonaise inventive originale korokke poulet",
+      "cuisineType": "Fusion Franco-Japonaise"
+    },
+    {
+      "id": "xxi",
+      "name": "LE XXI",
+      "rating": 4.9,
+      "description": "Restaurant à la meilleure note de Rouen proposant une cuisine française moderne dans un cadre élégant et une ambiance stylée.",
+      "price": "Dans votre budget pour le déjeuner",
+      "address": "43 Rue aux Ours, 76000 Rouen",
+      "phone": "02 76 52 52 57",
+      "website": "https://www.restaurantle21.fr/",
+      "websiteLabel": "restaurantle21.fr",
+      "reviews": [
+        "Great restaurant and great service", 
+        "We had a great diner, very good food in this restaurant with a stylish atmosphere"
+      ],
+      "tip": "Le menu est présenté sur un tableau noir.",
+      "searchTerms": "XXI meilleure note moderne élégant tableau noir",
+      "bestRated": true
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "Pour découvrir une cuisine étoilée",
+      "restaurant": "L'ODAS",
+      "description": "au déjeuner, une occasion rare de goûter à un restaurant étoilé Michelin sans se ruiner."
+    },
+    {
+      "category": "Pour une expérience historique",
+      "restaurant": "La Couronne",
+      "description": "le plus vieux restaurant de France, proposant une formule déjeuner à 29€."
+    },
+    {
+      "category": "Pour les amateurs d'originalité",
+      "restaurant": "Au Flaméron",
+      "description": "et sa fusion franco-japonaise qui a conquis de nombreux clients."
+    },
+    {
+      "category": "Pour la qualité unanimement reconnue",
+      "restaurant": "Le XXI ou Gill",
+      "description": "qui affichent les meilleures notes de la ville."
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-03-14",
+    "city": "Rouen",
+    "budget": "60€ par personne",
+    "version": "1.0.0"
+  }
+}

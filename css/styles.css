@@ -1,0 +1,369 @@
+/* ==========================================================================
+   Styles principaux - Restaurants Gastronomiques de Rouen
+   ========================================================================== */
+
+/* Variables */
+:root {
+    --primary-color: #8B2635;
+    --secondary-color: #D9A566;
+    --dark-color: #333;
+    --light-color: #f9f9f9;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+    --text-color: #333;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --radius: 10px;
+}
+
+/* ==========================================================================
+   Base et réinitialisation
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--light-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================================================
+   En-tête
+   ========================================================================== */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   Section introduction
+   ========================================================================== */
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   Section de recherche
+   ========================================================================== */
+
+.search-section {
+    margin-bottom: 40px;
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+#search-input {
+    width: 100%;
+    padding: 15px 45px;
+    border: 2px solid var(--medium-gray);
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(139, 38, 53, 0.2);
+}
+
+.clear-button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.clear-button:hover {
+    opacity: 1;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: rgba(139, 38, 53, 0.1);
+    border-radius: var(--radius);
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ==========================================================================
+   Cartes de restaurants
+   ========================================================================== */
+
+.restaurants {
+    margin-bottom: 40px;
+}
+
+#restaurants-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.restaurant-card.filtered-out {
+    opacity: 0.4;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+.restaurant-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.rating {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.restaurant-card ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.restaurant-card li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-card i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.avis {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.avis h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.tip {
+    background-color: rgba(217, 165, 102, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* ==========================================================================
+   Section recommandation
+   ========================================================================== */
+
+.recommendation {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+}
+
+.recommendation h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.recommendation ul {
+    padding-left: 20px;
+}
+
+.recommendation li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.recommendation li::before {
+    content: '\2022'; /* Puce personnalisée */
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ==========================================================================
+   Loading et états
+   ========================================================================== */
+
+.loading, .loading-item {
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.loading i, .loading-item i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.error-message {
+    background-color: rgba(217, 83, 79, 0.1);
+    color: #d9534f;
+    padding: 15px;
+    border-radius: var(--radius);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.error-message i {
+    margin-right: 10px;
+}
+
+/* ==========================================================================
+   Pied de page
+   ========================================================================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: var(--radius) var(--radius) 0 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.version-info {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    #restaurants-container {
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    #search-input {
+        padding: 12px 40px;
+        font-size: 0.9rem;
+    }
+    
+    .recommendation {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .restaurant-card {
+        padding: 20px 15px;
+    }
+}
